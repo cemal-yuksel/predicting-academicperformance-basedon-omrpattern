@@ -1,0 +1,35 @@
+============================================================
+METADATA DOĞRULAMA RAPORU
+============================================================
+
+GENEL BİLGİLER
+Toplam Satır: 2100
+Toplam Kolon: 5
+Kolonlar: subject_id, label, line_image_path, line_number, notes
+
+SUBJECT ANALİZİ
+Benzersiz Birey Sayısı: 21
+Birey Başına Ortalama Örnek: 100.00
+
+LABEL DAĞILIMI
+Label 0: 1050 (50.0%)
+Label 1: 1050 (50.0%)
+
+SATIR NUMARASI İSTATİSTİKLERİ
+Min: 0
+Max: 50
+Ortalama: 24.6
+
+İLK 10 SUBJECT
+1. S01: 100 örnek
+2. S02: 100 örnek
+3. S03: 100 örnek
+4. S04: 100 örnek
+5. S05: 100 örnek
+6. S06: 100 örnek
+7. S07: 100 örnek
+8. S08: 100 örnek
+9. S09: 100 örnek
+10. S10: 100 örnek
+
+============================================================

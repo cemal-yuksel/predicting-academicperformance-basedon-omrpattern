@@ -1,0 +1,21 @@
+============================================================
+ÖN İŞLEME İSTATİSTİKLERİ
+============================================================
+
+Toplam İşlenen Görüntü: 100
+Hata Sayısı: 0
+
+Hedef Boyut: 224x224
+Normalize Aralığı: [0, 1]
+Çıktı Formatı: (224, 224, 3) - RGB
+
+Piksel Değeri İstatistikleri:
+  Genel Ortalama: 0.698769
+  Genel Std: 0.204387
+  Min Ortalama: 0.567064
+  Max Ortalama: 0.801864
+
+Orijinal Boyut Çeşitliliği:
+  Farklı Boyut Sayısı: 80
+
+============================================================

@@ -1,0 +1,5 @@
+Metric,Value,Interpretation
+ROC-AUC,0.926833560090703,Excellent
+PR-AUC,0.8927463389059601,Good
+Average Precision,0.8933813970848825,Good
+Baseline (Random),0.5,Random Baseline

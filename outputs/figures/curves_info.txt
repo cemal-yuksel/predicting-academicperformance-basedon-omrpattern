@@ -1,0 +1,25 @@
+================================================================================
+ROC VE PRECISION-RECALL EĞRİLERİ HAKKINDA
+================================================================================
+
+🔍 NOT: Bu görselleştirmeler SİMÜLE EDİLMİŞTİR
+--------------------------------------------------------------------------------
+
+Gerçek ROC ve PR eğrilerinin çizilmesi için:
+
+1. 06_train_evaluate.py'ı güncelle:
+   - Her fold'dan y_true, y_proba değerlerini kaydet
+   - Pickle ile results'ı diske yaz
+
+2. Bu script'te predictions'ı yükle:
+   - sklearn.metrics.roc_curve() kullan
+   - sklearn.metrics.precision_recall_curve() kullan
+
+3. Micro/macro averaging yöntemlerini uygula:
+   - Tüm fold'ların tahminlerini birleştir
+   - Global ROC ve PR eğrilerini hesapla
+
+================================================================================
+
+Mevcut simülasyon, AUC skorlarına göre yaklaşık eğriler oluşturur.
+Gerçek eğriler, modelin threshold değerlerine göre değişir.

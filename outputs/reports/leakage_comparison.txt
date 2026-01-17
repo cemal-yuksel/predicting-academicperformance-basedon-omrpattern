@@ -1,0 +1,59 @@
+================================================================================
+VERİ SIZINTISI ANALİZİ - STRATEJİ KARŞILAŞTIRMASI
+================================================================================
+
+AMAÇ:
+--------------------------------------------------------------------------------
+Subject-wise CV ile standart CV arasındaki farkı göstermek.
+Aynı subject'in train ve test setinde bulunması veri sızıntısına yol açar.
+
+STRATEJİLER:
+--------------------------------------------------------------------------------
+
+StratifiedKFold (5 fold):
+  Fold sayısı:      5
+  Accuracy:         0.8762
+  Precision:        0.8690
+  Recall:           0.8867
+  F1:               0.8775
+  ROC-AUC:          0.9404
+  PR-AUC:           0.9291
+  Veri sızıntısı:   5 fold
+
+  ⚠️  VERİ SIZINTISI:
+    Fold 1: 21 ortak subject
+    Fold 2: 21 ortak subject
+    Fold 3: 21 ortak subject
+    Fold 4: 21 ortak subject
+    Fold 5: 21 ortak subject
+
+GroupKFold (5 fold):
+  Fold sayısı:      5
+  Accuracy:         0.8573
+  Precision:        0.8552
+  Recall:           0.8724
+  F1:               0.8593
+  ROC-AUC:          0.9284
+  PR-AUC:           0.9155
+  Veri sızıntısı:   0 fold
+
+
+================================================================================
+SONUÇ:
+--------------------------------------------------------------------------------
+
+StratifiedKFold vs GroupKFold:
+  Accuracy farkı: +0.0189 (StratifiedKFold lehine)
+  F1 farkı:       +0.0183 (StratifiedKFold lehine)
+
+StratifiedKFold daha yüksek performans gösteriyor çünkü:
+- Aynı subject'in train ve test'te olması modele 'ipucu' veriyor
+- Bu gerçek dünya performansını AŞIRI İYİMSER tahmin ediyor
+- Yeni subject'lerde (production'da) performans düşecektir
+
+GroupKFold kullanılmalıdır çünkü:
+- Her subject train VEYA test'te olur, ikisinde birden olmaz
+- Gerçek dünya senaryosunu simüle eder (yeni hastalar/öğrenciler)
+- Model genelleme yeteneği doğru değerlendirilir
+
+================================================================================

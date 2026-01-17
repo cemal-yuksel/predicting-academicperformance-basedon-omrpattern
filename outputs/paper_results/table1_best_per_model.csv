@@ -1,0 +1,18 @@
+Transfer Learning Method,Classification Method,Accuracy
+efficientnet_b0,SVC,0.8889999999999999
+efficientnet_b6,SVC,0.8858333333333333
+resnet101,LogisticRegressionCV,0.8855000000000001
+densenet201,SVC,0.8835
+resnet152,SVC,0.8831666666666667
+densenet169,SVC,0.8831666666666667
+efficientnet_v2_s,SVC,0.883
+efficientnet_b2,SVC,0.8803333333333333
+efficientnet_b1,LogisticRegressionCV,0.8800000000000001
+efficientnet_v2_m,ExtraTreesClassifier,0.8783333333333333
+resnet50,LogisticRegressionCV,0.8766666666666667
+efficientnet_b5,NuSVC,0.8760000000000001
+efficientnet_b7,SVC,0.8711666666666666
+alexnet,LogisticRegressionCV,0.8661666666666665
+vgg19,HistGradientBoostingClassifier,0.8584999999999999
+efficientnet_v2_l,SVC,0.8583333333333334
+vgg16,ExtraTreesClassifier,0.8566666666666667

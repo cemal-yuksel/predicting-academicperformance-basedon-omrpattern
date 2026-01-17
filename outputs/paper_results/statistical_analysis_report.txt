@@ -1,0 +1,65 @@
+================================================================================
+STATISTICAL ANALYSIS REPORT
+Transfer Learning for OMR Classification
+================================================================================
+
+EXPERIMENT OVERVIEW
+--------------------------------------------------------------------------------
+Total experiments: 425
+Transfer learning models: 17
+Classification algorithms: 25
+Overall mean accuracy: 0.790021
+Overall std accuracy: 0.170934
+Best result: 0.889000
+Worst result: 0.000000
+
+FRIEDMAN TEST RESULTS
+--------------------------------------------------------------------------------
+Test statistic: χ²(16) = 174.3448
+P-value: 1.14e-28
+Conclusion: Significant
+
+TOP 10 TRANSFER LEARNING MODELS (by mean accuracy)
+--------------------------------------------------------------------------------
+Rank  Model                    Mean        Std       Median    
+--------------------------------------------------------------------------------
+1     efficientnet_b0          0.806507  0.173462  0.846167
+2     efficientnet_v2_s        0.802760  0.173041  0.855667
+3     densenet169              0.798800  0.174620  0.846500
+4     resnet101                0.798033  0.179536  0.858833
+5     efficientnet_b2          0.797473  0.172528  0.846167
+6     efficientnet_v2_m        0.797220  0.172451  0.846667
+7     efficientnet_b6          0.796633  0.175058  0.846833
+8     resnet152                0.795793  0.177759  0.847500
+9     efficientnet_b1          0.792973  0.173249  0.847500
+10    resnet50                 0.792500  0.175927  0.845000
+
+TOP 10 CLASSIFICATION ALGORITHMS (by mean accuracy)
+--------------------------------------------------------------------------------
+Rank  Classifier                         Mean        Std       
+--------------------------------------------------------------------------------
+1     LogisticRegressionCV               0.873284  0.011520
+2     SVC                                0.872206  0.016424
+3     ExtraTreesClassifier               0.870078  0.010237
+4     HistGradientBoostingClassifier     0.868471  0.008481
+5     RandomForestClassifier             0.868127  0.011917
+6     GradientBoostingClassifier         0.867392  0.008661
+7     NuSVC                              0.866598  0.019247
+8     MLPClassifier                      0.864333  0.011117
+9     NearestCentroid                    0.853490  0.032979
+10    BernoulliNB                        0.846020  0.030152
+
+TOP 10 MODEL-CLASSIFIER COMBINATIONS
+--------------------------------------------------------------------------------
+Rank  Model                    Classifier                         Accuracy    
+--------------------------------------------------------------------------------
+1     efficientnet_b0          SVC                                0.889000
+2     efficientnet_b0          LogisticRegressionCV               0.888167
+3     efficientnet_b6          SVC                                0.885833
+4     resnet101                LogisticRegressionCV               0.885500
+5     efficientnet_b0          NuSVC                              0.884833
+6     efficientnet_b0          RandomForestClassifier             0.884000
+7     densenet201              SVC                                0.883500
+8     densenet169              SVC                                0.883167
+9     resnet152                SVC                                0.883167
+10    efficientnet_v2_s        SVC                                0.883000

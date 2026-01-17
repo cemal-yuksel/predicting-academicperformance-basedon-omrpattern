@@ -1,0 +1,376 @@
+================================================================================
+SUBJECT-WISE CROSS VALIDATION - DETAYLI RAPOR
+================================================================================
+
+
+================================================================================
+MODEL: LogisticRegression
+================================================================================
+
+Fold Detayları:
+--------------------------------------------------------------------------------
+Fold 1:
+  Train: 1600 örnek, 16 subject
+  Test:  500 örnek, 5 subject
+  Accuracy:  0.8860
+  Precision: 0.9949
+  Recall:    0.7760
+  F1:        0.8719
+  ROC-AUC:   0.9561
+  PR-AUC:    0.9679
+
+Fold 2:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7550
+  Precision: 0.7602
+  Recall:    0.7450
+  F1:        0.7525
+  ROC-AUC:   0.8395
+  PR-AUC:    0.8046
+
+Fold 3:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.8950
+  Precision: 0.8762
+  Recall:    0.9200
+  F1:        0.8976
+  ROC-AUC:   0.9619
+  PR-AUC:    0.9595
+
+Fold 4:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7800
+  Precision: 0.7500
+  Recall:    0.8400
+  F1:        0.7925
+  ROC-AUC:   0.8539
+  PR-AUC:    0.8389
+
+Fold 5:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.8825
+  Precision: 0.8312
+  Recall:    0.9600
+  F1:        0.8910
+  ROC-AUC:   0.9525
+  PR-AUC:    0.9434
+
+
+Ortalama Metrikler:
+--------------------------------------------------------------------------------
+Accuracy:  0.8397 ± 0.0596
+Precision: 0.8425 ± 0.0892
+Recall:    0.8482 ± 0.0820
+F1:        0.8411 ± 0.0580
+ROC-AUC:   0.9128 ± 0.0543
+PR-AUC:    0.9028 ± 0.0676
+
+
+Toplam Confusion Matrix:
+--------------------------------------------------------------------------------
+              Predicted 0    Predicted 1
+Actual 0         881            169
+Actual 1         163            887
+
+
+================================================================================
+MODEL: LinearSVC
+================================================================================
+
+Fold Detayları:
+--------------------------------------------------------------------------------
+Fold 1:
+  Train: 1600 örnek, 16 subject
+  Test:  500 örnek, 5 subject
+  Accuracy:  0.8820
+  Precision: 0.9848
+  Recall:    0.7760
+  F1:        0.8680
+  ROC-AUC:   0.9621
+  PR-AUC:    0.9719
+
+Fold 2:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7375
+  Precision: 0.7487
+  Recall:    0.7150
+  F1:        0.7315
+  ROC-AUC:   0.8472
+  PR-AUC:    0.8079
+
+Fold 3:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.8800
+  Precision: 0.8551
+  Recall:    0.9150
+  F1:        0.8841
+  ROC-AUC:   0.9741
+  PR-AUC:    0.9721
+
+Fold 4:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7875
+  Precision: 0.7533
+  Recall:    0.8550
+  F1:        0.8009
+  ROC-AUC:   0.8595
+  PR-AUC:    0.8550
+
+Fold 5:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.8625
+  Precision: 0.8222
+  Recall:    0.9250
+  F1:        0.8706
+  ROC-AUC:   0.9610
+  PR-AUC:    0.9547
+
+
+Ortalama Metrikler:
+--------------------------------------------------------------------------------
+Accuracy:  0.8299 ± 0.0577
+Precision: 0.8328 ± 0.0861
+Recall:    0.8372 ± 0.0809
+F1:        0.8310 ± 0.0576
+ROC-AUC:   0.9208 ± 0.0554
+PR-AUC:    0.9123 ± 0.0680
+
+
+Toplam Confusion Matrix:
+--------------------------------------------------------------------------------
+              Predicted 0    Predicted 1
+Actual 0         872            178
+Actual 1         174            876
+
+
+================================================================================
+MODEL: RandomForest
+================================================================================
+
+Fold Detayları:
+--------------------------------------------------------------------------------
+Fold 1:
+  Train: 1600 örnek, 16 subject
+  Test:  500 örnek, 5 subject
+  Accuracy:  0.8800
+  Precision: 0.9847
+  Recall:    0.7720
+  F1:        0.8655
+  ROC-AUC:   0.9728
+  PR-AUC:    0.9768
+
+Fold 2:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7900
+  Precision: 0.7871
+  Recall:    0.7950
+  F1:        0.7910
+  ROC-AUC:   0.8569
+  PR-AUC:    0.7979
+
+Fold 3:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.9350
+  Precision: 0.9028
+  Recall:    0.9750
+  F1:        0.9375
+  ROC-AUC:   0.9858
+  PR-AUC:    0.9840
+
+Fold 4:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7575
+  Precision: 0.7330
+  Recall:    0.8100
+  F1:        0.7696
+  ROC-AUC:   0.8329
+  PR-AUC:    0.8121
+
+Fold 5:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.9275
+  Precision: 0.8800
+  Recall:    0.9900
+  F1:        0.9318
+  ROC-AUC:   0.9789
+  PR-AUC:    0.9646
+
+
+Ortalama Metrikler:
+--------------------------------------------------------------------------------
+Accuracy:  0.8580 ± 0.0721
+Precision: 0.8575 ± 0.0885
+Recall:    0.8684 ± 0.0941
+F1:        0.8591 ± 0.0694
+ROC-AUC:   0.9255 ± 0.0663
+PR-AUC:    0.9071 ± 0.0837
+
+
+Toplam Confusion Matrix:
+--------------------------------------------------------------------------------
+              Predicted 0    Predicted 1
+Actual 0         897            153
+Actual 1         143            907
+
+
+================================================================================
+MODEL: GradientBoosting
+================================================================================
+
+Fold Detayları:
+--------------------------------------------------------------------------------
+Fold 1:
+  Train: 1600 örnek, 16 subject
+  Test:  500 örnek, 5 subject
+  Accuracy:  0.8840
+  Precision: 0.9948
+  Recall:    0.7720
+  F1:        0.8694
+  ROC-AUC:   0.9738
+  PR-AUC:    0.9782
+
+Fold 2:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.8025
+  Precision: 0.7951
+  Recall:    0.8150
+  F1:        0.8049
+  ROC-AUC:   0.8640
+  PR-AUC:    0.8015
+
+Fold 3:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.9375
+  Precision: 0.9070
+  Recall:    0.9750
+  F1:        0.9398
+  ROC-AUC:   0.9889
+  PR-AUC:    0.9886
+
+Fold 4:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7500
+  Precision: 0.7252
+  Recall:    0.8050
+  F1:        0.7630
+  ROC-AUC:   0.8385
+  PR-AUC:    0.8366
+
+Fold 5:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.9125
+  Precision: 0.8541
+  Recall:    0.9950
+  F1:        0.9192
+  ROC-AUC:   0.9768
+  PR-AUC:    0.9726
+
+
+Ortalama Metrikler:
+--------------------------------------------------------------------------------
+Accuracy:  0.8573 ± 0.0703
+Precision: 0.8552 ± 0.0924
+Recall:    0.8724 ± 0.0932
+F1:        0.8593 ± 0.0669
+ROC-AUC:   0.9284 ± 0.0637
+PR-AUC:    0.9155 ± 0.0797
+
+
+Toplam Confusion Matrix:
+--------------------------------------------------------------------------------
+              Predicted 0    Predicted 1
+Actual 0         892            158
+Actual 1         139            911
+
+
+================================================================================
+MODEL: MLP
+================================================================================
+
+Fold Detayları:
+--------------------------------------------------------------------------------
+Fold 1:
+  Train: 1600 örnek, 16 subject
+  Test:  500 örnek, 5 subject
+  Accuracy:  0.8800
+  Precision: 0.9847
+  Recall:    0.7720
+  F1:        0.8655
+  ROC-AUC:   0.9677
+  PR-AUC:    0.9734
+
+Fold 2:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7875
+  Precision: 0.7725
+  Recall:    0.8150
+  F1:        0.7932
+  ROC-AUC:   0.8510
+  PR-AUC:    0.7913
+
+Fold 3:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.9125
+  Precision: 0.8767
+  Recall:    0.9600
+  F1:        0.9165
+  ROC-AUC:   0.9740
+  PR-AUC:    0.9621
+
+Fold 4:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.7350
+  Precision: 0.6911
+  Recall:    0.8500
+  F1:        0.7623
+  ROC-AUC:   0.8437
+  PR-AUC:    0.8466
+
+Fold 5:
+  Train: 1700 örnek, 17 subject
+  Test:  400 örnek, 4 subject
+  Accuracy:  0.8950
+  Precision: 0.8292
+  Recall:    0.9950
+  F1:        0.9045
+  ROC-AUC:   0.9592
+  PR-AUC:    0.9452
+
+
+Ortalama Metrikler:
+--------------------------------------------------------------------------------
+Accuracy:  0.8420 ± 0.0688
+Precision: 0.8308 ± 0.0987
+Recall:    0.8784 ± 0.0853
+F1:        0.8484 ± 0.0609
+ROC-AUC:   0.9191 ± 0.0588
+PR-AUC:    0.9037 ± 0.0720
+
+
+Toplam Confusion Matrix:
+--------------------------------------------------------------------------------
+              Predicted 0    Predicted 1
+Actual 0         855            195
+Actual 1         133            917
+
+
+================================================================================
